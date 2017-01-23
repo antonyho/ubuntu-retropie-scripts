@@ -3,7 +3,7 @@
 
 sudo apt-get update && sudo apt-get -y upgrade
 sudo apt-get install -y git dialog
-mkdir $HOME/RetroPieInstallation
+mkdir -p $HOME/RetroPieInstallation
 cd $HOME/RetroPieInstallation
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 cd RetroPie-Setup

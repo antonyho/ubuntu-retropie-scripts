@@ -7,4 +7,4 @@ cd $HOME/RetroPieInstallation
 echo "Getting SNES no-intro ROM set"
 curl https://archive.org/download/No-Intro-Collection_2016-01-03_Fixed/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System.zip -o no-intro-SNES-rom-set.zip
 
-unzip no-intro-SNES-rom-set.zip -d $HOME/RetroPie/roms
+unzip $HOME/RetroPieInstallation/no-intro-SNES-rom-set.zip -d $HOME/RetroPie/roms

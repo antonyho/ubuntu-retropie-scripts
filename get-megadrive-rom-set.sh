@@ -5,6 +5,6 @@ sudo apt-get install -y unzip curl
 mkdir -p $HOME/RetroPieInstallation
 cd $HOME/RetroPieInstallation
 echo "Getting SEGA Mega Drive ROM set"
-curl https://archive.org/download/No-Intro-Collection_2016-01-03_Fixed/Sega%20-%20Mega%20Drive%20-%20Genesis.zip -C -o Sega-MegaDrive-Genesis.zip
+curl https://archive.org/download/No-Intro-Collection_2016-01-03_Fixed/Sega%20-%20Mega%20Drive%20-%20Genesis.zip -o Sega-MegaDrive-Genesis.zip
 
 unzip Sega-MegaDrive-Genesis.zip -d $HOME/RetroPie/roms/megadrive

@@ -10,12 +10,14 @@ else
 	mkdir -p $HOME/RetroPieInstallation
 	cd $HOME/RetroPieInstallation
 	echo "Getting SNES no-intro ROM set"
-	curl -c cookie.txt -d "user=$1" -d "password=$2" -d "referer=https://archive.org/" -d "action=login" https://archive.org/account/login.php
-	curl -c cookie.txt https://archive.org/download/No-Intro-Collection_2016-01-03_Fixed/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System.zip -o no-intro-SNES-rom-set.zip
+	curl https://archive.org/account/login.php -c cookie.txt
+	curl https://archive.org/account/login.php -b cookie.txt -c cookie.txt -F "username=$1" -F "password=$2" -F "referer=https://archive.org/" -F "action=login" -F "submit=Log in"
+	curl https://archive.org/ -b cookie.txt -c cookie.txt
+	curl https://archive.org/download/No-Intro-Collection_2016-01-03_Fixed/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System.zip -L -b cookie.txt -c cookie.txt -o $HOME/RetroPieInstallation/no-intro-SNES-rom-set.zip
 	
 	if [ -f cookie.txt ]; then
 		rm cookie.txt
 	fi
 
-	unzip $HOME/RetroPieInstallation/no-intro-SNES-rom-set.zip -d $HOME/RetroPie/roms
+	unzip $HOME/RetroPieInstallation/no-intro-SNES-rom-set.zip -d $HOME/RetroPie/roms/snes/
 fi

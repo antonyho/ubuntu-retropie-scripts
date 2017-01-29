@@ -19,3 +19,5 @@ Use the script:
 ### Set game launch screen
 
 Follow the instruction here: [runcommand](https://github.com/retropie/retropie-setup/wiki/runcommand)
+Or use thie script:
+`enable-launch-game-splash.sh`

@@ -1,5 +1,6 @@
 #!/bin/bash
 # Get no-intro SEGA Mega Drive - Genesis ROM set
+# https://archive.org/details/No-Intro-Collection_2016-01-03_Fixed
 
 if [ $# -lt 2 ]; then
 	echo "This script requires archive.org username and password in order to start downloading."

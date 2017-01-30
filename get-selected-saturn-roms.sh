@@ -29,8 +29,12 @@ else
 		rm cookie.txt
 	fi
 	
-	7z e $HOME/RetroPieInstallation/saturn/AkumajouDraculaX-GekkanoYasoukyoku.7z -o$HOME/RetroPie/roms/saturn/
-	7z e $HOME/RetroPieInstallation/saturn/DragonForceUSA.7z -o$HOME/RetroPie/roms/saturn/
-	7z e $HOME/RetroPieInstallation/saturn/DragonForceII-KamiSarishiDaichiniJapan.7z -o$HOME/RetroPie/roms/saturn/
-	7z e $HOME/RetroPieInstallation/saturn/GuardianHeroesUSA.7z -o$HOME/RetroPie/roms/saturn/
+	mkdir -p $HOME/RetroPie/roms/saturn/DraculaX/
+	mkdir -p $HOME/RetroPie/roms/saturn/DragonForce/
+	mkdir -p $HOME/RetroPie/roms/saturn/DragonForceII/
+	mkdir -p $HOME/RetroPie/roms/saturn/GuardianHeroes/
+	7z e $HOME/RetroPieInstallation/saturn/AkumajouDraculaX-GekkanoYasoukyoku.7z -o$HOME/RetroPie/roms/saturn/DraculaX/
+	7z e $HOME/RetroPieInstallation/saturn/DragonForceUSA.7z -o$HOME/RetroPie/roms/saturn/DragonForce/
+	7z e $HOME/RetroPieInstallation/saturn/DragonForceII-KamiSarishiDaichiniJapan.7z -o$HOME/RetroPie/roms/saturn/DragonForceII/
+	7z e $HOME/RetroPieInstallation/saturn/GuardianHeroesUSA.7z -o$HOME/RetroPie/roms/saturn/GuardianHeroes/
 fi

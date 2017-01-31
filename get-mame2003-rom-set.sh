@@ -1,7 +1,9 @@
 #!/bin/bash
 # Get MAME2003 0.78 ROM set
 
-sudo apt-get install -y unzip curl
+command -v unzip >/dev/null 2>&1 || { sudo apt-get install -y unzip; }
+command -v curl >/dev/null 2>&1 || { sudo apt-get install -y curl; }
+
 mkdir -p $HOME/RetroPieInstallation
 cd $HOME/RetroPieInstallation
 echo "Getting MAME2003 0.78 ROM set"

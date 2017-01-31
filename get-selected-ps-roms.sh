@@ -17,9 +17,9 @@ else
 	mkdir -p $HOME/RetroPieInstallation/ps
 	cd $HOME/RetroPieInstallation/ps
 	echo "Getting my selected Playstation games from redump ROM set"
-	curl https://archive.org/account/login.php -c cookie.txt
-	curl https://archive.org/account/login.php -b cookie.txt -c cookie.txt -F "username=$1" -F "password=$2" -F "referer=https://archive.org/" -F "action=login" -F "submit=Log in"
-	curl https://archive.org/ -b cookie.txt -c cookie.txt
+	curl https://archive.org/account/login.php -c cookie.txt -s
+	curl https://archive.org/account/login.php -b cookie.txt -c cookie.txt -F "username=$1" -F "password=$2" -F "referer=https://archive.org/" -F "action=login" -F "submit=Log in" -s
+	curl https://archive.org/ -b cookie.txt -c cookie.txt -s
 
 	curl https://archive.org/download/psx_redump_usa_20141221/Castlevania%20-%20Symphony%20of%20the%20Night%20%28USA%29.7z -L -b cookie.txt -c cookie.txt -o $HOME/RetroPieInstallation/ps/Castlevania-SymphonyoftheNightUSA.7z
 	curl https://archive.org/download/psx_redump_usa_20141221/Final%20Fantasy%20VII%20%28USA%29%20%28Disc%201%29.7z -L -b cookie.txt -c cookie.txt -o $HOME/RetroPieInstallation/ps/FinalFantasyVIIUSADisc1.7z

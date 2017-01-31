@@ -18,9 +18,9 @@ else
 	mkdir -p $HOME/RetroPieInstallation/saturn
 	cd $HOME/RetroPieInstallation/saturn
 	echo "Getting my selected Sega Saturn games from no-intro ROM set"
-	curl https://archive.org/account/login.php -c cookie.txt -s
-	curl https://archive.org/account/login.php -b cookie.txt -c cookie.txt -F "username=$1" -F "password=$2" -F "referer=https://archive.org/" -F "action=login" -F "submit=Log in" -s
-	curl https://archive.org/ -b cookie.txt -c cookie.txt -s
+	curl https://archive.org/account/login.php -c cookie.txt >/dev/null
+	curl https://archive.org/account/login.php -b cookie.txt -c cookie.txt -F "username=$1" -F "password=$2" -F "referer=https://archive.org/" -F "action=login" -F "submit=Log in" >/dev/null
+	curl https://archive.org/ -b cookie.txt -c cookie.txt >/dev/null
 
 	curl https://archive.org/download/SgaStrnCmplt/Akumajou%20Dracula%20X%20-%20Gekka%20no%20Yasoukyoku%20%28Japan%29%20%282M%29.7z -L -b cookie.txt -c cookie.txt -o $HOME/RetroPieInstallation/saturn/AkumajouDraculaX-GekkanoYasoukyoku.7z
 	curl https://archive.org/download/SgaStrnCmplt/Dragon%20Force%20%28USA%29.7z -L -b cookie.txt -c cookie.txt -o $HOME/RetroPieInstallation/saturn/DragonForceUSA.7z

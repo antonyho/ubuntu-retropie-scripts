@@ -14,9 +14,9 @@ else
 	mkdir -p $HOME/RetroPieInstallation
 	cd $HOME/RetroPieInstallation
 	echo "Getting SEGA Saturn ROM set"
-	curl https://archive.org/account/login.php -c cookie.txt -s
-	curl https://archive.org/account/login.php -b cookie.txt -c cookie.txt -F "username=$1" -F "password=$2" -F "referer=https://archive.org/" -F "action=login" -F "submit=Log in" -s
-	curl https://archive.org/ -b cookie.txt -c cookie.txt -s
+	curl https://archive.org/account/login.php -c cookie.txt >/dev/null
+	curl https://archive.org/account/login.php -b cookie.txt -c cookie.txt -F "username=$1" -F "password=$2" -F "referer=https://archive.org/" -F "action=login" -F "submit=Log in" >/dev/null
+	curl https://archive.org/ -b cookie.txt -c cookie.txt >/dev/null
 	curl https://archive.org/compress/SgaStrnCmplt -L -b cookie.txt -c cookie.txt -o $HOME/RetroPieInstallation/Sega-Saturn.zip
 
 	if [ -f cookie.txt ]; then

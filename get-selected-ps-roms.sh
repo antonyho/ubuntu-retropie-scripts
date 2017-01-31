@@ -31,9 +31,9 @@ else
 	fi
 
 	mkdir -p $HOME/RetroPie/roms/psx/CastlevaniaX-SymphonyOfTheNight/
-	7z e $HOME/RetroPieInstallation/ps/Castlevania-SymphonyoftheNightUSA.7z -o$HOME/RetroPie/roms/saturn/CastlevaniaX-SymphonyOfTheNight/
+	7z e $HOME/RetroPieInstallation/ps/Castlevania-SymphonyoftheNightUSA.7z -o$HOME/RetroPie/roms/ps/CastlevaniaX-SymphonyOfTheNight/
 	mkdir -p $HOME/RetroPie/roms/psx/FinalFantasyVII/
-	7z e $HOME/RetroPieInstallation/ps/FinalFantasyVIIUSADisc1.7z -o$HOME/RetroPie/roms/saturn/FinalFantasyVII/
-	7z e $HOME/RetroPieInstallation/ps/FinalFantasyVIIUSADisc2.7z -o$HOME/RetroPie/roms/saturn/FinalFantasyVII/
-	7z e $HOME/RetroPieInstallation/ps/FinalFantasyVIIUSADisc3.7z -o$HOME/RetroPie/roms/saturn/FinalFantasyVII/
+	7z e $HOME/RetroPieInstallation/ps/FinalFantasyVIIUSADisc1.7z -o$HOME/RetroPie/roms/ps/FinalFantasyVII/
+	7z e $HOME/RetroPieInstallation/ps/FinalFantasyVIIUSADisc2.7z -o$HOME/RetroPie/roms/ps/FinalFantasyVII/
+	7z e $HOME/RetroPieInstallation/ps/FinalFantasyVIIUSADisc3.7z -o$HOME/RetroPie/roms/ps/FinalFantasyVII/
 fi

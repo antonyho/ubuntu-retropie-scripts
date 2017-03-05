@@ -52,26 +52,26 @@ else
 		rm cookie.txt
 	fi
 
-	mkdir -p $HOME/RetroPie/roms/dc/Ikaruga-Japan/
+	mkdir -p $HOME/RetroPie/roms/dreamcast/Ikaruga-Japan/
 	unzip $HOME/RetroPieInstallation/dc/Ikaruga/Ikaruga-Japan.zip -d $HOME/RetroPie/roms/dreamcast/Ikaruga-Japan/
 
-	mkdir -p $HOME/RetroPie/roms/dc/SakuraTaisen1/
+	mkdir -p $HOME/RetroPie/roms/dreamcast/SakuraTaisen1/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen1/SakuraTaisen-Japan-Disc1.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen1/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen1/SakuraTaisen-Japan-Disc2.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen1/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen1/SakuraTaisen-Japan-Omake-Disc.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen1/
 
-	mkdir -p $HOME/RetroPie/roms/dc/SakuraTaisen2/
+	mkdir -p $HOME/RetroPie/roms/dreamcast/SakuraTaisen2/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen2/SakuraTaisen2-Japan-Disc1.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen2/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen2/SakuraTaisen2-Japan-Disc2.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen2/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen2/SakuraTaisen2-Japan-Disc3.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen2/
 
-	mkdir -p $HOME/RetroPie/roms/dc/SakuraTaisen3/
+	mkdir -p $HOME/RetroPie/roms/dreamcast/SakuraTaisen3/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen3/SakuraTaisen3-Japan-Disc1.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen3/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen3/SakuraTaisen3-Japan-Disc2.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen3/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen3/SakuraTaisen3-Japan-Disc3.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen3/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen3/SakuraTaisen3-Japan-DramaDownloadDisc.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen3/
 
-	mkdir -p $HOME/RetroPie/roms/dc/SakuraTaisen4/
+	mkdir -p $HOME/RetroPie/roms/dreamcast/SakuraTaisen4/
 	unzip $HOME/RetroPieInstallation/dc/SakuraTaisen4/SakuraTaisen4-Japan.zip -d $HOME/RetroPie/roms/dreamcast/SakuraTaisen4/
 
 fi
